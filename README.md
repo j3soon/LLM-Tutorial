@@ -74,6 +74,9 @@ Navigate to `LLM-Tutorial/workspace` and open the notebook you want to run.
 
 Since these notebooks require a lot of time to run, we recommend you to first click `Cell > Run All` to run all cells in the notebook. Then, you can start going through the notebook.
 
+- [NeMo_Training_TinyLlama.ipynb](workspace/NeMo_Training_TinyLlama.ipynb)
+- [TensorRT-LLM.ipynb](workspace/TensorRT-LLM.ipynb)
+
 ### Deleting the Container
 
 After you have finished the tutorial, make sure to delete the container to avoid using up all your credits.
@@ -145,7 +148,7 @@ nb-clean clean workspace/TensorRT-LLM.ipynb
 
 ## Contributors
 
-The code was primarily written by [Cliff](https://github.com/wcks13589), tested by [Yang-Hsien](https://github.com/y-h-Lin), and documented by [Johnson](https://github.com/j3soon), with assistance from others listed in the [contributor list](https://github.com/j3soon/LLM-Tutorial/graphs/contributors).
+The code was primarily written by [Cliff](https://github.com/wcks13589), with assistance from others listed in the [contributor list](https://github.com/j3soon/LLM-Tutorial/graphs/contributors).
 
 ## Acknowledgements
 
