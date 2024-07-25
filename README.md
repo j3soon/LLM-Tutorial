@@ -76,6 +76,7 @@ Since these notebooks require a lot of time to run, we recommend you to first cl
 
 - [NeMo_Training_TinyLlama.ipynb](workspace/NeMo_Training_TinyLlama.ipynb)
 - [TensorRT-LLM.ipynb](workspace/TensorRT-LLM.ipynb)
+- [NeMo_Guardrails.ipynb](workspace/NeMo_Guardrails.ipynb) (requires a [free NVIDIA NIM API Key](https://build.nvidia.com/mistralai/mixtral-8x22b-instruct))
 
 ### Deleting the Container
 
@@ -160,6 +161,7 @@ Make sure to run the following before committing:
 pip install nb-clean
 nb-clean clean workspace/NeMo_Training_TinyLlama.ipynb
 nb-clean clean workspace/TensorRT-LLM.ipynb
+nb-clean clean workspace/NeMo_Guardrails.ipynb
 ```
 
 ## Contributors
