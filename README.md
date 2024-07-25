@@ -115,6 +115,22 @@ Click `VIEW DETAILS` in the user dashboard and check if the `Total Storage` quot
 
 This issue happens rarely and we're currently working with TWCC to resolve it.
 
+### Unexpected Errors During sudo
+
+If you encountered the following error message when running `sudo rm -rf /workspace`:
+
+```
+env: ‘rm’: Permission denied
+```
+
+This may be due to the `sudo` alias in `~/.bashrc` being added when installing conda. You can remove the alias by commenting the following line in `~/.bashrc`:
+
+```
+alias sudo='sudo env PATH=$PA'
+```
+
+and then open a new terminal or run `source ~/.bashrc`.
+
 ## Running Locally
 
 Install [docker](https://docs.docker.com/engine/install/ubuntu/) and [nvidia container toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html). Then add your user to the docker group and re-login/restart.
