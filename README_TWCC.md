@@ -66,7 +66,7 @@ Navigate to `LLM-Tutorial/workspace` and open the notebook you want to run.
 
 ## Running the Notebook
 
-Since these notebooks require a lot of time to run, we recommend you to first click `Cell > Run All` to run all cells in the notebook. Then, you can start going through the notebook.
+Since these notebooks require a lot of time to run, we recommend you to run all cells before the last cell in the notebook (the last cell deletes all relevant data). Then, you can start going through the notebook.
 
 - [NeMo_Training_TinyLlama.ipynb](workspace/NeMo_Training_TinyLlama.ipynb)
 - [TensorRT-LLM.ipynb](workspace/TensorRT-LLM.ipynb)
@@ -88,9 +88,28 @@ If you have been using TWCC in the past, you may encounter unexpected errors dur
 
 ```sh
 mv ~/.local ~/.local.bak
+mv ~/.bashrc ~/.bashrc.bak
 ```
 
-and then restart the Jupyter kernel.
+and then delete and re-create the container (restarting the Jupyter kernel may not be enough).
+
+After that, you should re-run the environment setup steps above (`rm`/`ln`/`chown`).
+
+### Import Error in `click.core`
+
+If you encounter the following error message:
+
+```
+ImportError: cannot import name 'ParameterSource' from 'click.core' (/usr/local/lib/python3.10/dist-packages/click/core.py)
+```
+
+Run:
+
+```sh
+pip install -U click
+```
+
+as mentioned in [this post](https://stackoverflow.com/a/75568418), and re-run the cell.
 
 ### Disk Quota Exceeded
 
@@ -123,7 +142,7 @@ env: ‘rm’: Permission denied
 This may be due to the `sudo` alias in `~/.bashrc` being added when installing conda. You can remove the alias by commenting the following line in `~/.bashrc`:
 
 ```
-alias sudo='sudo env PATH=$PA'
+# alias sudo='sudo env PATH=$PA'
 ```
 
 and then open a new terminal or run `source ~/.bashrc`.
