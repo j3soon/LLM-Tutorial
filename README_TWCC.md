@@ -49,6 +49,8 @@ In the terminal, run:
 # Clone the repository and link the workspace
 cd ~
 git clone https://github.com/j3soon/LLM-Tutorial
+ls -al /workspace
+# Check the workspace does not contain any important data, all data in this directory will be deleted in the next step
 sudo rm -rf /workspace
 sudo ln -s $PWD/LLM-Tutorial/workspace /.
 # Change ownership for NeMo 24.05, which is required when patching it later in the notebook
