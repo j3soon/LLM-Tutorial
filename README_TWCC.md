@@ -115,7 +115,7 @@ as mentioned in [this post](https://stackoverflow.com/a/75568418), and re-run th
 
 ### Disk Quota Exceeded
 
-This may happen if you are using TWCC in the past and have somehow end up with zero disk quota.
+This may happen if you are using TWCC in the past and have somehow end up with zero disk quota due to no subscribed projects.
 
 Example error message:
 
@@ -131,7 +131,22 @@ Click `VIEW DETAILS` in the user dashboard and check if the `Total Storage` quot
 ![](docs/images/faq-disk-quota-issue-1.png)
 ![](docs/images/faq-disk-quota-issue-2.png)
 
-This issue happens rarely and we're currently working with TWCC to resolve it.
+Follow the steps below to resolve the issue:
+
+1. Keep the used disk space below 100 GB for both `Home` and `Work` directories by removing unnecessary files.
+
+   ![](docs/images/faq-disk-quota-solution-1.png)
+
+2. In the `HFS User Portal`, click `Change Project` and apply the `國網教育訓練用計畫` project.
+
+   ![](docs/images/faq-disk-quota-solution-2.png)
+   ![](docs/images/faq-disk-quota-solution-3.png)
+   ![](docs/images/faq-disk-quota-solution-4.png)
+
+3. The disk quota should be restored to 100 GB. You may need to wait a while for the disk quota information to be updated.
+
+   ![](docs/images/faq-disk-quota-solution-5.png)
+   ![](docs/images/faq-disk-quota-solution-6.png)
 
 ### Unexpected Errors During sudo
 
