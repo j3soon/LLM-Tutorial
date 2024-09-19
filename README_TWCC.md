@@ -1,5 +1,9 @@
 # Running on TWCC
 
+## Updates
+
+**2024/08/08**: Slides are released at [nqobu/nvidia](https://github.com/nqobu/nvidia/tree/main/20240806).
+
 ## Create Container
 
 1. Visit TWCC (<https://www.twcc.ai>) and click `Sign In`.
